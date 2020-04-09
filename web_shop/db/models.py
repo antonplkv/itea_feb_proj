@@ -57,6 +57,7 @@ class Product(me.Document):
     price = me.DecimalField(min_value=0, force_string=True, required=True)
     discount_percentage = me.IntField(min_value=0, max_value=100, default=0)
     category = me.ReferenceField(Category)
+    image = me.FileField()
 
     @classmethod
     def get_discount_products(cls):
