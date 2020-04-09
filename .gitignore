@@ -1,0 +1,3 @@
+*.pyc
+venvv/
+web_shop/bot/config.py
