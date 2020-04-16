@@ -1,3 +1,5 @@
-from web_shop.bot.main import bot
+from web_shop.bot.main import app, set_webhook
 
-bot.polling()
+if __name__ == '__main__':
+    set_webhook()
+    app.run(port=8000, debug=True)
