@@ -117,6 +117,6 @@ def set_webhook():
     bot.remove_webhook()
     time.sleep(1)
     bot.set_webhook(
-        url='https://34.67.151.27/tg',
-        certificate=open('web_cert.pem', 'r')
+        url='https://34.89.209.222/tg',
+        certificate=open('webhook_cert.pem', 'r')
     )
